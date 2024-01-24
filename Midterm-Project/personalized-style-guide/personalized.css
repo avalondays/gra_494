@@ -15,7 +15,7 @@ h2,
 h3,
 ol,
 ul,
-li {
+li, a {
     color: white;
 }
 
@@ -33,6 +33,7 @@ li {
 
 .org-captions {
     padding: 2rem 0rem;
+    color:  rgb(255, 205, 246);
 }
 
 h2 {
@@ -49,8 +50,32 @@ h3 {
     text-transform: uppercase;
 }
 
-i {
+.fa-arrow-right {
     padding-left: 1rem;
+}
+
+.fa-arrow-left {
+    padding-right: 1rem;
+}
+
+.button-back {
+    transition: all .4s ease-out;
+}
+
+.button-back a:hover {
+    transition: all .4s ease-out;
+    color: rgb(255, 85, 224);
+}
+
+.subSection {
+	background-color: #1e142e;
+	padding: 2rem;
+	margin: 1rem 0rem;
+    width:fit-content
+}
+
+.subSection h3 {
+    padding: .5rem 0rem;
 }
 
 
@@ -98,6 +123,10 @@ i {
 
 .article-text p {
     font-size: 8pt;
+}
+
+.article-text h3 {
+    color:#ffffff96
 }
 
 .sos-item {
@@ -162,9 +191,158 @@ i {
     transition: all .4s ease-out;
 }
 
+.work-item {
+    position: relative;
+    text-align: left;
+    display: inline-block;
+    overflow: hidden;
+    
+}
+
+.work-item img {
+    transition: all .3s ease-in-out;
+}
+
+.work-item img:hover {
+        position: relative;
+        text-align: left;
+        transform:scale(1.1);
+        transition: all .3s ease-in-out;
+}
+
+.work-item h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 20pt;
+    text-shadow: 2px 2px 8px #000000;
+    font-weight: 400;
+}
+
+.work-item .caption {
+    color:#ffffff96;
+    text-transform: uppercase;
+    font-size: 9pt;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.service-item {
+    position: relative;
+    text-align: left;
+    transition: all .3s ease-out;
+}
+
+.service-item:hover {
+    transform:scale(0.97);
+    transition: all .3s ease-out;
+}
+
+.service-item .caption {
+    font-size: 100pt;
+    font-weight: 900;
+    position: absolute;
+    top: 10%;
+    left: 31%;
+    transition: all .3s ease-out;
+}
+
+
+.service-item h2 {
+    margin: 2rem 0rem;
+    padding: 0rem 1rem;
+    text-align: left;
+    font-weight: 700;
+    letter-spacing: .15rem;
+    border-left: medium solid #ffffff96;
+}
+
+footer p {
+	color:#ffffff96;
+	width:100%;
+	padding: 3rem 0rem;
+    font-size: 8pt;
+}
 
 /* MOBILE END */
+
 /* DESKTOP */
 
+@media screen and (min-width: 1000px) {
+
+    h1 {
+        font-size: 45pt;
+    }
+	
+    .article-item {
+        position: relative;
+        text-align: left;
+        color: white;
+        padding: 2rem 0rem;
+        display: inline-block;
+        overflow: hidden;
+        transition: all .3s ease-out;
+        max-width: 800px;
+    }
+    
+    .article-text {
+        position: absolute;
+        bottom: 30px;
+        right: -30px;
+        padding: 2rem 2rem;
+        text-shadow: 1px 1px 8px #000000;
+        max-width: 400px;
+    }
+
+    .article-text h3 {
+        font-size: 13pt;
+    }
+    
+    .article-text p {
+        font-size: 18pt;
+    }
+
+.sos-item {
+    max-width: 500px;
+}
+
+.work-item {
+    width: 600px;
+	height: 400px;
+	object-fit: cover;
+	size:100%;
+}
+
+.work-item h3 {
+font-size: 27pt;
+padding: 0rem 2rem 0rem 1rem;
+
+}
+
+.service-item {
+    max-width: 800px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.service-item .caption {
+    font-size: 300pt;
+    font-weight: 900;
+    position: absolute;
+    top: 7px;
+    left: -10px;
+    transition: all .3s ease-out;
+    color:#ffffff6b
+}
+
+.service-item:hover {
+ transform: scale(0.97);
+}
+.service-item .caption:hover {
+    transform: none;
+}
+
+}
 
 /* DESKTOP END */
