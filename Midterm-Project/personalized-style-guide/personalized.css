@@ -1,0 +1,42 @@
+/* UNIVERSAL STYLES */
+
+/* Figtree weights: 300 Light, 400 Regular, 700 Bold, 900 Black */
+
+body {
+    background-color: rgb(49, 40, 65);
+    font-family: 'Figtree', sans-serif;
+    margin: 2rem;
+}
+
+p,h1,h2,h3,ol,ul,li {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.organism {
+    padding: 2rem 0rem;
+}
+
+.org-captions {
+    padding: 2rem 0rem;
+}
+
+
+
+
+/* MOBILE */
+
+
+
+/* MOBILE END */
+/* DESKTOP */
+
+
+/* DESKTOP END */

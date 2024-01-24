@@ -35,6 +35,10 @@ h3 {
 	font-weight: 500;
 }
 
+h1 {
+	padding: 1rem 0rem;
+}
+
 h2 {
 	font-size: 1.3em;
 }
@@ -96,6 +100,12 @@ p.copyright {
 	border-style: solid;
 	border-color: rgba(255, 255, 255, 0.51);
 	border-width: 0.05rem;
+}
+
+.subSection {
+	background-color: #0a0c16;
+	padding: 2rem;
+	margin: 1rem 0rem;
 }
 
 /* STYLING */
@@ -212,6 +222,13 @@ h3 {
 	font-weight: 500;
 	color: rgba(255, 255, 255, 0.432);
 	padding-right: 1rem;
+}
+
+.subSection .numbering  {
+	font-size: 10pt;
+	color: white;
+	text-align: left;
+	padding-top: 1rem;
 }
 
 .button-body {
