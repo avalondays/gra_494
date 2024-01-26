@@ -267,8 +267,8 @@ li {
 }
 
 iframe {
-    min-width: 800px;
-    min-height: 500px;
+    width: 800px;
+    height: 500px;
 
 }
 
@@ -305,5 +305,96 @@ footer {
         text-transform: uppercase;
         padding-right: 1rem;
 
+    }
+}
+
+/* Breakpoint */
+@media screen and (max-width: 900px) {
+
+    h1 {
+        font-size: 25pt;
+        text-align: center;
+    }
+
+   
+    
+	.menu-wrapper a {
+       font-size: 6pt;
+    }
+
+    .section-1 img {
+            position: absolute;
+            right: 0px;
+            top: 50px;
+            padding: 1rem;
+            width: 400px;
+            height: 700px;
+            object-fit: cover;
+            align-items: center;
+            padding: 5rem 2.5rem;
+    }
+
+    .section-2 {
+        background-size: cover;
+        width: 100%;
+        background-position: 50%;
+    }
+
+    .section-middle {
+        display: none;
+    }
+
+    .section-3 {
+        display: block;
+        padding: 5rem 2.5rem;
+    
+        h2 {
+            padding-bottom: 2.5rem;
+        }
+    
+        img {
+            min-width: 40vw;
+            padding: 2rem 0rem;
+        }
+    }
+
+    .section-4 {
+        padding: 5rem 2.5rem;
+    }
+
+    .work-group {
+        display: block;
+        text-align: left;
+        padding-bottom: 7rem;
+    }   
+    
+    .work-item {
+        margin-bottom: 2rem;
+    }
+
+    .section-5 {
+        display: block;
+        justify-content: space-between;
+        padding: 5rem 2.5rem;
+    }
+    
+    iframe {
+   width: 300px;
+   height: 200px;
+    }
+    
+    .interior-section-grid-text {
+        padding-top: 3rem;
+        display: block;
+
+        p {
+            padding-top: 2rem;
+        }
+    }
+
+    footer {
+        font-size: 7pt;
+        display: block;
+        justify-content: left;
     }
 }
