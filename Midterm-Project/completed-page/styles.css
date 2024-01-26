@@ -3,6 +3,10 @@
 /* Figtree weights: 300 Light, 400 Regular, 700 Bold, 900 Black */
 /* Orbitron weights: 400 Regular, 700 Bold, 900 Black*/
 
+html {
+    scroll-behavior: smooth
+}
+
 body {
     background-color: black;
     color: white;
@@ -10,9 +14,10 @@ body {
 
 a {
     text-decoration: none;
-    color:white;
+    color: white;
     font-family: 'Figtree', sans-serif;
     text-transform: uppercase;
+    font-size: 11pt;
 }
 
 p,
@@ -34,15 +39,26 @@ h3 {
     display: flex;
     align-content: center;
     padding: 1rem;
-     background-color: blue;
-     width: fit-content;
-     margin: .6rem 0rem;
- }
+    background-color: blue;
+    width: fit-content;
+    margin: .6rem 0rem;
+    border-radius: 20px;
+}
+
+.btt {
+    cursor: pointer;
+}
 
 h1 {
-    font-size: 55pt;
+    font-size: 50pt;
     max-width: 70%;
     text-align: left;
+}
+
+strong {
+    color: transparent;
+    background-image: linear-gradient(180deg, rgba(175, 193, 255, 1) 5%, rgba(177, 255, 209, 1) 100%);
+    background-clip: text;
 }
 
 /* HEADER NAV */
@@ -54,8 +70,13 @@ h1 {
     padding: 1rem 2rem;
     background: rgb(0, 9, 40);
     background: linear-gradient(180deg, rgba(0, 9, 40, 1) 5%, rgba(7, 17, 70, 0) 100%);
-    /*  position: fixed; */
+    position: fixed;
     width: 100%;
+    z-index: 1;
+}
+
+.logo {
+    max-width: 12vw;
 }
 
 .menu-wrapper ul {
@@ -70,7 +91,6 @@ li {
     gap: 1rem;
     text-transform: uppercase;
     padding-right: 1rem;
-
 }
 
 /* SECTION 1 */
@@ -80,8 +100,9 @@ li {
     background-size: cover;
     position: relative;
     text-align: center;
-    height: 70vh;
+    height: 90vh;
     z-index: -1;
+    padding-top: 5rem;
 }
 
 .section-1 h1 {
@@ -94,10 +115,10 @@ li {
 .section-1 img {
     position: absolute;
     right: 150px;
-    top: 50px;
+    top: 80px;
     height: fit-content;
     padding: 1rem;
-    width: 900px;
+    width: 800px;
     height: 500px;
     align-items: center;
 }
@@ -116,16 +137,21 @@ li {
     position: absolute;
     right: 50vh;
     top: 130vh;
-    
-}
+    border-radius: 25px;
 
-.section-middle p {
-    padding: 2rem 0rem;
-}
+    h2 {
+        text-transform: uppercase;
+    }
 
-.section-middle a {
-    display:inline-flex;
-    align-content: center;
+    p {
+        padding: 2rem 0rem;
+    }
+
+    a {
+        display: inline-flex;
+        align-content: center;
+    }
+
 }
 
 .section-3 {
@@ -145,25 +171,63 @@ li {
 
 .section-4 {
     padding: 5rem 6rem;
-    background-color:rgb(38, 40, 69)
+    background-image: url(./img/header-bg.jpg);
 }
+
 .section-4 h2 {
     text-align: center;
     padding-bottom: 6rem;
 }
 
 .work-group {
-    display:flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 4rem;
     text-align: left;
     padding-bottom: 7rem;
+
+
+    .work-item {
+        text-align: left;
+        padding: 2rem;
+        box-shadow: 2px 2px 20px #00000089;
+        transition: all .3s ease-out;
+    }
+
+    .work-item:hover {
+        transform: scale(1.06);
+        transition: all .3s ease-out;
+    }
+
+    .work-item-one {
+        background-image: url(./img/agent.png);
+        background-size: cover;
+    }
+
+    .work-item-two {
+        background-image: url(./img/rehab.png);
+        background-size: cover;
+    }
+
+    .work-item-three {
+        background-image: url(./img/engineering.png);
+        background-size: cover;
+    }
+
+    .work-item-four {
+        background-image: url(./img/research.png);
+        background-size: cover;
+    }
+
+    .work-item p {
+        padding: 1rem 0rem;
+        font-size: 11pt;
+    }
 }
 
-.work-item {
-    text-align: left;
-    background-color: black;
-    padding: 2rem;
-}
+
+
+
 
 .work-item .button {
     display: block !important;
@@ -171,7 +235,7 @@ li {
 
 
 .section-5 {
-    background-color: blue;
+    background-color: rgb(16, 16, 61);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
@@ -186,27 +250,39 @@ li {
 iframe {
     min-width: 800px;
     min-height: 500px;
-   
+
+}
+
+.interior-section-grid-text {
+    padding-top: 3rem;
+    display: flex;
+    gap: 3rem;
+
+    p {
+        font-size: 9pt;
+        font-style: italic;
+    }
 }
 
 /* FOOTER */
 footer {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 2rem 5rem;
     width: 100%;
+    font-size: 11pt;
 }
 
 footer ul {
     display: flex;
     gap: 6rem;
-    padding-right: 2rem;
     align-items: center;
 }
 
 footer li {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1.3fr 1fr 1fr;
     gap: 1rem;
     text-transform: uppercase;
     padding-right: 1rem;
