@@ -1,0 +1,214 @@
+/* UNIVERSAL STYLES */
+
+/* Figtree weights: 300 Light, 400 Regular, 700 Bold, 900 Black */
+/* Orbitron weights: 400 Regular, 700 Bold, 900 Black*/
+
+body {
+    background-color: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+    font-family: 'Figtree', sans-serif;
+    text-transform: uppercase;
+}
+
+p,
+li,
+ul,
+ol {
+    font-family: 'Figtree', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.button {
+    display: flex;
+    align-content: center;
+    padding: 1rem;
+     background-color: blue;
+     width: fit-content;
+     margin: .6rem 0rem;
+ }
+
+h1 {
+    font-size: 55pt;
+    max-width: 70%;
+    text-align: left;
+}
+
+/* HEADER NAV */
+
+.menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgb(0, 9, 40);
+    background: linear-gradient(180deg, rgba(0, 9, 40, 1) 5%, rgba(7, 17, 70, 0) 100%);
+    /*  position: fixed; */
+    width: 100%;
+}
+
+.menu-wrapper ul {
+    display: flex;
+    gap: 6rem;
+    padding-right: 2rem;
+    align-items: center;
+}
+
+li {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    text-transform: uppercase;
+    padding-right: 1rem;
+
+}
+
+/* SECTION 1 */
+
+.section-1 {
+    background-image: url(./img/header-bg.jpg);
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    height: 70vh;
+    z-index: -1;
+}
+
+.section-1 h1 {
+    position: absolute;
+    bottom: 100px;
+    left: 60px;
+    z-index: 1;
+}
+
+.section-1 img {
+    position: absolute;
+    right: 150px;
+    top: 50px;
+    height: fit-content;
+    padding: 1rem;
+    width: 900px;
+    height: 500px;
+    align-items: center;
+}
+
+.section-2 {
+    background-image: url('./img/pexels-athena-2582937.jpg');
+    height: 60vh;
+}
+
+.section-middle {
+    background-color: white;
+    color: black;
+    max-width: 50vw;
+    padding: 2rem;
+    text-align: center;
+    position: absolute;
+    right: 50vh;
+    top: 130vh;
+    
+}
+
+.section-middle p {
+    padding: 2rem 0rem;
+}
+
+.section-middle a {
+    display:inline-flex;
+    align-content: center;
+}
+
+.section-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15rem;
+    padding: 20rem 6rem 8rem 6rem;
+}
+
+.section-3 h2 {
+    padding-bottom: 2.5rem;
+}
+
+.section-3 img {
+    min-width: 40vw;
+}
+
+.section-4 {
+    padding: 5rem 6rem;
+    background-color:rgb(38, 40, 69)
+}
+.section-4 h2 {
+    text-align: center;
+    padding-bottom: 6rem;
+}
+
+.work-group {
+    display:flex;
+    gap: 4rem;
+    text-align: left;
+    padding-bottom: 7rem;
+}
+
+.work-item {
+    text-align: left;
+    background-color: black;
+    padding: 2rem;
+}
+
+.work-item .button {
+    display: block !important;
+}
+
+
+.section-5 {
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    justify-content: space-between;
+    padding: 5rem 6rem;
+}
+
+.section-5 h2 {
+    padding-bottom: 2rem;
+}
+
+iframe {
+    min-width: 800px;
+    min-height: 500px;
+   
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+footer ul {
+    display: flex;
+    gap: 6rem;
+    padding-right: 2rem;
+    align-items: center;
+}
+
+footer li {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    text-transform: uppercase;
+    padding-right: 1rem;
+
+}
