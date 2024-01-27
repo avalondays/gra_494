@@ -151,11 +151,15 @@ li {
     }
 }
 
+/* SECTION 2 */
+
 .section-2 {
     background-image: url('./img/section-2-bg.png');
     background-size: cover;
     height: 60vh;
 }
+
+/* MIDDLE "FLOATING" SECTION */
 
 .section-middle {
     background-color:rgba(234, 234, 234, 0.853);
@@ -183,6 +187,8 @@ li {
 
 }
 
+/* SECTION 3 */
+
 .section-3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -199,6 +205,8 @@ background: linear-gradient(180deg, rgba(7,18,54,1) 31%, rgba(0,3,12,1) 88%);
         min-width: 40vw;
     }
 }
+
+/* SECTION 4 */
 
 .section-4 {
     padding: 5rem 6rem;
@@ -261,6 +269,8 @@ background: linear-gradient(180deg, rgba(7,18,54,1) 31%, rgba(0,3,12,1) 88%);
     display: block !important;
 }
 
+/* SECTION 5 */
+
 
 .section-5 {
     background: rgb(1,7,21);
@@ -282,7 +292,7 @@ iframe {
 
 }
 
-.interior-section-grid-text {
+.section-grid-text-interior {
     padding-top: 3rem;
     display: flex;
     gap: 3rem;
@@ -292,6 +302,7 @@ iframe {
         font-style: italic;
     }
 }
+
 
 /* FOOTER */
 footer {
@@ -324,6 +335,7 @@ footer {
     h1 {
         font-size: 25pt;
         text-align: center;
+            z-index: 2;
     }
 
    
@@ -393,7 +405,7 @@ footer {
    height: 200px;
     }
     
-    .interior-section-grid-text {
+    .section-grid-text-interior {
         padding-top: 3rem;
         display: block;
 

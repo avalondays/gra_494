@@ -81,9 +81,11 @@ h3 {
 
 /* MOBILE */
 
+/************************ Get in Touch Button *************************/
+
 .button-header {
     padding: 1rem 2rem;
-    background-color: rgb(255, 85, 224);
+    background-color: rgb(85, 130, 255);
     background-color: linear-gradient(90deg, rgba(255, 85, 224, 1) 0%, rgba(27, 131, 171, 1) 50%, rgba(11, 36, 120, 1) 100%);
     color: white;
     letter-spacing: .0rem;
@@ -101,6 +103,8 @@ h3 {
     transition: all .4s ease-out;
 
 }
+
+/************************ Article Link *************************/
 
 .article-item {
     position: relative;
@@ -129,9 +133,11 @@ h3 {
     color:#ffffff96
 }
 
+/************************ Scope of Services Item *************************/
+
 .sos-item {
     background: rgb(11, 36, 120);
-    background: linear-gradient(90deg, rgba(11, 36, 120, 1) 0%, rgb(128, 5, 105) 100%);
+    background: linear-gradient(90deg, rgba(11, 36, 120, 1) 0%, rgb(5, 128, 112) 100%);
     padding: 3rem 3rem;
     position: relative;
     text-align: left;
@@ -167,6 +173,8 @@ h3 {
     padding-top: 1rem;
 }
 
+/************************ Let's Chat Button *************************/
+
 .button-body {
     padding: 1rem 2rem;
     background-color: rgb(85, 215, 255);
@@ -190,6 +198,8 @@ h3 {
     color:white;
     transition: all .4s ease-out;
 }
+
+/************************ Client Work *************************/
 
 .work-item {
     position: relative;
@@ -227,6 +237,8 @@ h3 {
     top: 20px;
     left: 20px;
 }
+
+/************************ Service Link *************************/
 
 .service-item {
     position: relative;
@@ -274,6 +286,8 @@ footer p {
     h1 {
         font-size: 45pt;
     }
+
+    /*********** Article Link DT ************/
 	
     .article-item {
         position: relative;
@@ -303,9 +317,13 @@ footer p {
         font-size: 18pt;
     }
 
+    /*********** Scope of Services DT ************/
+
 .sos-item {
     max-width: 500px;
 }
+
+/************************ Client Work Item DT *************************/
 
 .work-item {
     width: 600px;
@@ -319,6 +337,8 @@ font-size: 27pt;
 padding: 0rem 2rem 0rem 1rem;
 
 }
+
+/************************ Service Link DT *************************/
 
 .service-item {
     max-width: 800px;
@@ -343,6 +363,172 @@ padding: 0rem 2rem 0rem 1rem;
     transform: none;
 }
 
+/************************ "Floating" Panel *************************/
+
+.section-middle {
+    background-color:rgba(137, 137, 137, 0.853);
+    max-width: 50vw;
+    padding: 2rem;
+    text-align: center;
+    /* vvv modify for "floating" centered appearance vvv  */
+    /*position: absolute; */
+    /*right: 50vh;*/
+   /* top: 140vh;*/
+    /* ^^^ modify for "floating" centered appearance ^^^ */
+    border-radius: 25px;
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+    p {
+        padding: 2rem 0rem;
+    }
+
+    a {
+        display: inline-flex;
+        align-content: center;
+    }
+
 }
 
+/************************ Services Row with Image BGs *************************/
+
+.section-4 {
+    padding: 5rem 6rem;
+    background-image: url(./img/header-bg.jpg);
+
+    h2 {
+        text-align: center;
+        padding-bottom: 6rem;
+    }
+}
+
+.skills-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 4rem;
+    text-align: left;
+    padding-bottom: 7rem;
+
+
+    .skills-item {
+        text-align: left;
+        padding: 2rem;
+        box-shadow: 2px 2px 20px #00000089;
+        transition: all .3s ease-out;
+        border-radius: 16px;
+    }
+
+    .skills-item:hover {
+        transform: scale(1.06);
+        transition: all .3s ease-out;
+    }
+
+    .skills-item-one {
+        background-image: url(../img/placeholder.jpg);
+        background-size: cover;
+    }
+
+    .skills-item-two {
+        background-image: url(../img/placeholder.jpg);
+        background-size: cover;
+    }
+
+    .skills-item-three {
+        background-image: url(../img/placeholder.jpg);
+        background-size: cover;
+    }
+
+    .skills-item-four {
+        background-image: url(../img/placeholder.jpg);
+        background-size: cover;
+    }
+
+    .skills-item p {
+        padding: 1rem 0rem;
+        font-size: 11pt;
+    }
+
+}
+
+/************************ Video & Description Highlight *************************/
+.section-5 {
+    background: rgb(1,7,21);
+background: linear-gradient(180deg, rgba(1,7,21,1) 31%, rgba(2,13,45,1) 88%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    justify-content: space-between;
+    padding: 5rem 6rem;
+
+    h2 {
+        padding-bottom: 2rem;
+    }
+}
+
+iframe {
+    width: 800px;
+    height: 500px;
+
+}
+
+.section-grid-text-interior {
+    padding-top: 3rem;
+    display: flex;
+    gap: 3rem;
+
+    p {
+        font-size: 9pt;
+        font-style: italic;
+    }
+}
+
+/************************ Header Navigation Bar w/ Logo *************************/
+
+.menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgb(0, 9, 40);
+    background: linear-gradient(180deg, rgba(0, 9, 40, 1) 5%, rgba(7, 17, 70, 0) 100%);
+   /* position: fixed; */
+    width: 100%;
+    z-index: 1;
+
+    ul {
+        display: flex;
+        gap: 6rem;
+        padding-right: 2rem;
+        align-items: center;
+    }
+
+    a {
+        transition: all .3s ease-out;
+    }
+
+    a:hover {
+        transition: all .3s ease-out;
+        color: rgb(30, 127, 255);
+    }
+
+    .button a:hover {
+            transition: all .3s ease-out;
+            color: black;
+    }
+}
+
+.logo {
+    max-width: 12vw;
+}
+
+li {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    text-transform: uppercase;
+    padding-right: 1rem;
+}
+
+}
 /* DESKTOP END */
