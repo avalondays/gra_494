@@ -530,5 +530,23 @@ li {
     padding-right: 1rem;
 }
 
+/**************** Two-Column About Section ****************/
+.section-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    padding: 8rem 6rem 8rem 6rem;
+    background: rgb(7,18,54);
+background: linear-gradient(180deg, rgb(22, 38, 90) 31%, rgba(0,3,12,1) 88%);
+
+    h2 {
+        padding-bottom: 2.5rem;
+    }
+
+    img {
+        min-width: 40vw;
+    }
+}
+
 }
 /* DESKTOP END */

@@ -20,6 +20,10 @@ a {
     font-size: 11pt;
 }
 
+img {
+    border-radius: 16px;
+}
+
 p,
 li,
 ul,
@@ -27,6 +31,7 @@ ol {
     font-family: 'Figtree', sans-serif;
     list-style: none;
     text-decoration: none;
+    line-height: 1.6rem;
 }
 
 h1,
@@ -49,7 +54,7 @@ h3 {
 
 .button:hover {
     color: white;
-    background: rgb(45, 85, 233);
+    background: rgb(93, 128, 255);
     transition: all .3s ease-out;
 }
 
@@ -75,7 +80,7 @@ strong {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem 2rem;
+    padding: 1rem 2rem;
     background: rgb(0, 9, 40);
     background: linear-gradient(180deg, rgba(0, 9, 40, 1) 5%, rgba(7, 17, 70, 0) 100%);
     position: fixed;
@@ -142,6 +147,7 @@ li {
         width: 800px;
         height: 500px;
         align-items: center;
+        
     }
 }
 
@@ -188,13 +194,15 @@ li {
     grid-template-columns: 1fr 1fr;
     gap: 10rem;
     padding: 20rem 6rem 8rem 6rem;
+    background: rgb(7,18,54);
+background: linear-gradient(180deg, rgba(7,18,54,1) 31%, rgba(0,3,12,1) 88%);
 
     h2 {
         padding-bottom: 2.5rem;
     }
 
     img {
-        min-width: 30vw;
+        min-width: 40vw;
     }
 }
 
@@ -223,6 +231,7 @@ li {
         padding: 2rem;
         box-shadow: 2px 2px 20px #00000089;
         transition: all .3s ease-out;
+        border-radius: 16px;
     }
 
     .work-item:hover {
@@ -264,7 +273,8 @@ li {
 
 
 .section-5 {
-    background-color: rgb(16, 16, 61);
+    background: rgb(1,7,21);
+background: linear-gradient(180deg, rgba(1,7,21,1) 31%, rgba(2,13,45,1) 88%);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
