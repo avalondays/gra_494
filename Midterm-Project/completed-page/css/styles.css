@@ -156,7 +156,7 @@ li {
 .section-2 {
     background-image: url('./img/section-2-bg.png');
     background-size: cover;
-    height: 60vh;
+    height: 30vh;
 }
 
 /* MIDDLE "FLOATING" SECTION */
@@ -169,7 +169,7 @@ li {
     text-align: center;
     position: absolute;
     right: 50vh;
-    top: 140vh;
+    top: 110vh;
     border-radius: 25px;
 
     h2 {
