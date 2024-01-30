@@ -240,22 +240,22 @@ background: linear-gradient(180deg, rgba(7,18,54,1) 31%, rgba(0,3,12,1) 88%);
     }
 
     .work-item-one {
-        background-image: url(./img/agent.png);
+        background-image: url(../img/agent.png);
         background-size: cover;
     }
 
     .work-item-two {
-        background-image: url(./img/rehab.png);
+        background-image: url(../img/rehab.png);
         background-size: cover;
     }
 
     .work-item-three {
-        background-image: url(./img/engineering.png);
+        background-image: url(../img/engineering.png);
         background-size: cover;
     }
 
     .work-item-four {
-        background-image: url(./img/research.png);
+        background-image: url(../img/research.png);
         background-size: cover;
     }
 
