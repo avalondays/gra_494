@@ -1,5 +1,3 @@
-$('.lightbox-close').click(function(){
-	$('video').each(function(){
-	  $(this).get(0).pause();
-	})
-  });
+jQuery('.lightbox-close').on('click', function() {
+	jQuery('iframe')[0].pause();
+ });
