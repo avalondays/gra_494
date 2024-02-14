@@ -1,3 +1,7 @@
-jQuery('.lightbox-close').on('click', function() {
-	jQuery('iframe')[0].pause();
- });
+$(document).ready(function () {
+  $(".lightbox-close").click(function () {
+      var iframeSrc = $(".lightbox-target iframe").attr("src");
+      $(".lightbox-target iframe").attr("src", "");
+      $(".lightbox-target iframe").attr("src", iframeSrc);
+  });
+});
