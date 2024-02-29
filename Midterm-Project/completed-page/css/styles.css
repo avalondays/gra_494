@@ -76,9 +76,6 @@ strong {
 }
 
 
-.mobile-nav {
-    display:none;
-}
 
 
 
@@ -467,83 +464,7 @@ footer {
 /* Breakpoint */
 @media screen and (max-width: 900px) {
 
-    /* NAV */
-
-    .mobile-nav {
-        display: flex;
-        justify-content: right;
-        padding: 2rem 0rem 2rem 0rem;
-        width: 100%;
-        transition: .3s all;
-    }
-
-    .fa-solid {
-        padding: 0rem 3rem;
-    }
-
-.menu-wrapper {
-    display: none;
-}
-
-/* --------- HAMBURGER NAV -------- */
-
-
-li h1 {
-    font-size: 15px;
-    padding-bottom: 1rem;
-    font-weight: 500;
-}
-
-.logo {
-    z-index: 0;
-}
-
-
-nav {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 0px;
-    background-color: #141139a4;
-    padding: 2rem 1rem;
-    z-index: 1;
-    transition: .3s all;
-    font-size: 15pt;
-
-    li {
-        margin: 1rem 0rem;
-        padding-left: 2rem;
-    }
-
-    a {
-        font-size: 24pt;
-
-    }
-}
-
-.button-header {
-    padding: .5rem 1.5rem;
-    background-color: #446ee2;
-    border-radius: 2rem;
-}
-
-.menu-button {
-    background-color: rgba(243, 232, 226, 0);
-    border: 0px solid transparent;
-    line-height: 0;
-    z-index: 1;
-    color: #f7f1e5;
-    z-index: 1;
-}
-
-.menu-button:hover {
-    color: #59d9fc;
-    cursor: pointer;
-}
-
-
-/* --------- HAMBURGER NAV END -------- */
+    
 
     h1 {
         font-size: 25pt;
