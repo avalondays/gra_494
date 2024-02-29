@@ -5,9 +5,3 @@ $(document).ready(function () {
       $(".lightbox-target iframe").attr("src", iframeSrc);
   });
 });
-
-$('.menu-button').click(function () {
-
-  $('nav').toggleClass('open');
-
-});
