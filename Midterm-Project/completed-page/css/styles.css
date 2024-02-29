@@ -548,7 +548,11 @@ nav {
     h1 {
         font-size: 25pt;
         text-align: center;
-        z-index: 2;
+        z-index: 1;
+    }
+
+    .photo {
+        z-index: 0;
     }
 
 
