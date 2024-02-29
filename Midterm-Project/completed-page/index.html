@@ -15,7 +15,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/8d6285502c.js" crossorigin="anonymous"></script>
 </head>
+
+<!--MOBILE NAVIGATION-->
+<div class="mobile-nav">
+    <div class="top-nav">
+
+        <button class="menu-button">
+            <i class="fa-sharp fa-solid fa-bars fa-2x"></i>
+        </button>
+    </div>
+    <nav>
+        <ul>
+            <button class="menu-button">
+                <p><i class="fa-solid fa-xmark"></i>ㅤClose</p>
+            </button>
+            <li><a href="index.html" title="Home"><b>Home</b></a></li>
+            <li><a href="logo-identity.html" title="Project 1">About</a></li>
+            <li><a href="desktop-website.html" title="Project 2">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+<!--DESKTOP NAVIGATION-->
 
 <body>
     <section class="main">
@@ -23,7 +45,7 @@
         <header>
             <div class="menu-wrapper">
                 <img class="logo" src="./img/goddard-logo.png" alt="Goddard Institute of Cybernetics Logo" />
-                <nav>
+                <div class="nav">
                     <div class="links">
                         <ul>
                             <li><a href="https://www.google.com/" class="underline">About</a></li>
@@ -33,7 +55,7 @@
                             </li>
                         </ul>
                     </div>
-                </nav>
+                </div>
             </div>
         </header>
 
@@ -96,7 +118,7 @@
         </section>
         <a id="5"></a>
         <section class="section-5">
-            
+
 
             <div class="video-lightbox">
 
@@ -108,7 +130,7 @@
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
-                        <div id="player"></div>
+                    <div id="player"></div>
                     <a class="lightbox-close" href="#5"></a>
                 </div>
 
@@ -148,5 +170,5 @@
     </footer>
 
     <!-- Load Scripts -->
-  <script src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
